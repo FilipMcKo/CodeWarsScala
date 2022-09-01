@@ -5,6 +5,5 @@ ThisBuild / scalaVersion := "2.13.8"
 lazy val root = (project in file("."))
   .settings(
     name := "CodeWarsScala",
-    libraryDependencies += "org.scalactic" %% "scalactic" % "3.2.13",
-    libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.13" % "test"
+    libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.13" //% "test"
   )

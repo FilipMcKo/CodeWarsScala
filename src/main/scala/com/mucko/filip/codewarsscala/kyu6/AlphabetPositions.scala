@@ -1,6 +1,7 @@
-package com.mucko.filip.codewarsscala
+package com.mucko.filip.codewarsscala.kyu6
 
 object AlphabetPositions extends App {
+  //My solution
   val CONST_TO_SUBTR = 96
   val ASCII_MAX = 122
   val ASCII_MIN = 97
@@ -22,5 +23,7 @@ object AlphabetPositions extends App {
     (a.toInt - CONST_TO_SUBTR).toString
   }
 
-  println(alphabetPositions("The sunset sets at twelve o' clock."))
+  //Solution copied form CodeWars
+  def alphabetPosition(text: String): String =
+    text.filter(_.isLetter).map(_.toLower - 96).mkString(" ")
 }
